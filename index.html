@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class = "container">
+      <div class = "main-wrapper">
+        
+           <div class="bmi_stats">
+            <h1 id="text_BMI_">BMI</h1>
+            <h2 id="text_BODY_">Body</h2>
+            <h3 id="text_INFO_">Info</h3>
+            <h4 id="text_KCAL_">Kcal</h4>
+           </div>
+
+           <hr id="color_bmi">
+
+
+           <div class = "btns">  
+            <button id="gender" type = "button" onclick="Gender()" class = "btn">I'm a man</button>
+          </div>
+
+        <div class="form__input-container">
+          <input class="form__input" type="text" placeholder="Age" id = "age"/>
+          <label class="form__input-label">Age</label>
+        </div>
+
+        <div class="form__input-container">
+          <input class="form__input" type="text" placeholder="Kg" id = "kg"/>
+          <label class="form__input-label">Kg</label>
+        </div>
+
+        <div class="form__input-container">
+          <input class="form__input" type="text" placeholder="Height" id = "height"/>
+          <label class="form__input-label">Height</label>
+        </div>
+        
+        <div class = "btns">  
+          <button type = "button" onclick="BMI_Calculator()" class = "btn">Calculate</button>
+          <button type = "button" onclick="clear_btn()" class = "btn">Clear</button>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
